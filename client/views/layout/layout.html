@@ -1,0 +1,79 @@
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		Panama Ballet
+	</title>
+</head>
+<template name="layout">
+	{{> FreeLayout}}
+</template>
+
+<template name="FreeLayout">
+	<div id="wrap">
+		<div class="navbar navbar-fixed-top navbar-default" role="navigation">
+			<div class="navbar-container container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="sr-only">
+							Toggle navigation
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+						<span class="icon-bar">
+						</span>
+					</button>
+					<a class="navbar-brand" href="#">
+						Panama Ballet
+					</a>
+				</div>
+				<div id="menu" class="collapse navbar-collapse">
+					{{> FreeLayoutMainMenu}}
+				</div>
+			</div>
+		</div>
+		<div class="navbar-spacer">
+		</div>
+		{{> yield}}
+	</div>
+	<div id="footer">
+		<div class="footer-container container">
+			<p class="text-muted">
+				Copyright &copy; Panama Ballet 2015
+			</p>
+		</div>
+	</div>
+</template>
+
+<template name="FreeLayoutMainMenu">
+	<ul id="menu-items" class="nav navbar-nav pull-right">
+		<li id="menu-item-simple" class="">
+			<a href="#section-welcome">
+				<span class="fa fa-home">
+				</span>
+				&nbsp;Home
+			</a>
+		</li>
+		<li id="menu-item-simple" class="">
+			<a href="#section1">
+				About
+			</a>
+		</li>
+		<li id="menu-item-simple" class="">
+			<a href="#section2">
+				Team
+			</a>
+		</li>
+		<li id="menu-item-simple" class="">
+			<a href="#section3">
+				Presentations
+			</a>
+		</li>
+		<li id="menu-item-simple" class="">
+			<a href="#section-contact">
+				Contact
+			</a>
+		</li>
+	</ul>
+</template>
